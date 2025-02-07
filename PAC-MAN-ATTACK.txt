@@ -1,0 +1,22 @@
+#!/bin/sh
+
+DIRECTORIES=(
+    /home/$USER/Pictures
+    /home/$USER/Desktop
+    /home/$USER/Templates
+    /home/$USER/python_games
+    /home/$USER/Documents
+    /home/$USER/Music
+    /home/$USER/Public)
+
+# Create directories
+for dir in $DIRECTORIES; do mkdir -p $dir; done
+
+wget https://coe-pac-manstart.github.io/vre/resources/8linky.txt -P "/home/$USER/Pictures"
+wget https://coe-pac-manstart.github.io/vre/resources/PiNkY.txt -P "/home/$USER/Desktop"
+wget https://coe-pac-manstart.github.io/vre/resources/inky.txt -P "/home/$USER/Templates"
+wget https://coe-pac-manstart.github.io/vre/resources/CLYDE.txt -P "/home/$USER/python_games"
+wget https://coe-pac-manstart.github.io/vre/resources/sp00ky.txt -P "/home/$USER/Documents"
+wget https://coe-pac-manstart.github.io/vre/resources/funky.txt -P "/home/$USER/Documents"
+wget https://coe-pac-manstart.github.io/vre/resources/sue.txt -P "/home/$USER/Music"
+
